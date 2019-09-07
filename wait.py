@@ -11,5 +11,5 @@ def wait_until_message(event):
     if currentTimeDifference.days < 0:
         return
     else:
-        secondsUntilMessage = max(0, currentTimeDifference.seconds - 600)
+        secondsUntilMessage = max(0, currentTimeDifference.seconds - 800)
         time.sleep(secondsUntilMessage)
