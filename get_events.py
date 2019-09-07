@@ -10,13 +10,13 @@ def main():
        calendarId='primary', timeMin=now,
        maxResults=10, singleEvents=True,
        orderBy='startTime').execute()
-   events = events_result.get('items', [])
+   return events_result.get('items', [])
 
-   if not events:
-       print('No upcoming events found.')
-   for event in events:
-       start = event['start'].get('dateTime', event['start'].get('date'))
-       print(start, event['summary'])
+#    if not events:
+#        print('No upcoming events found.')
+#    for event in events:
+#        start = event['start'].get('dateTime', event['start'].get('date'))
+#        print(start, event['summary'])
 
 if __name__ == '__main__':
    main()
