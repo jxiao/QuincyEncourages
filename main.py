@@ -10,7 +10,7 @@ for event in events:
     wait_until_message(event_start_to_datetime(event))
     #message = get_message()
     message = "you're doing great!" #replace with message() once its implemented
-    number = 6466411038 #delete after implementing get_phone_number
+    number = "<enter a phone number>" #delete after implementing get_phone_number
     send_message(message, number)
 
 
