@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Quincy, the Encouraging Bot</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"/>
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/scrolling-nav.css') }}" rel="stylesheet"/>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Quincy Encourages</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sign-up">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Hi there, I'm Quincy!</h1>
+      <p class="lead">I'm here to encourage and push you towards success!</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About me</h2>
+          <p class="lead"> I (Quincy) am an AI system that sends positive comments via SMS to a student prior to one’s exam 
+            to create an encouraging and comfortable environment. The student can schedule one’s assessments via Google calendar, 
+            which I will then automatically digest and analyze. Messages will be sent based upon the schedule prior to the 
+            student’s examinations.
+            </p>
+            <br>
+            <h4>Inspiration</h4>
+          <p class="lead">
+              After reading a book titled "Blink" by Malcolm Gladwell, my founders pondered on the idea that there can be inherent negative 
+              factors to minority groups while taking standardized tests: including negative, racially-charged comments. To 
+              eliminate this disparity, they created an application that would send positive affirmations to individuals to neutralize
+              any previously toxic influences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sign-up" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Sign Up</h2>
+            <p class="lead">Here, you can sign up for text notifications! I'll text you at the number below 10 minutes prior to 
+              any of your big moments (which I'll find on your Google Calendar). All I ask is that you follow Step 1 in the link
+              below and fill out the short form, and then you can get right back to doing what it is you do!
+
+              <br></br>
+            </p>
+            <ul>
+                <form action="" method="POST">
+                  First Name:   <input type="text" name="fname" required><br>
+                  Last Name:    <input type="text" name="lname" required><br>
+                  
+                  Phone Number: <input type="text" name="phone_number" required><br>
+                  <br>
+                  Questions: <br>
+                  <ol>
+                      <li> Are you a boy or a girl? <select name="sex" required>
+                          <option value="boy">Boy</option>
+                          <option value="girl">Girl</option>
+                          <option value="none">None of the above</option>
+                        </select>
+                      </li>
+                      <li> How are you feeling? <select name="feeling" required>
+                          <option value="good">Great. Living my best life.</option>
+                          <option value="not-bad">Not bad. It can definitely be worse, but yes I’m fine.</option>
+                          <option value="poorly">Poorly. The stresses of school are weighing me down and I can barely walk. 
+                            I am Atlas and homework is the world on my back.</option>
+                        </select>
+                      </li>
+                      <li> How do you feel about your ability in school? <select name="school" required>
+                          <option value="strongly">Strong. I’m confident in myself and my work.</option>
+                          <option value="alright">Alright. A push could get me going.</option>
+                          <option value="bad">Bad. Please help.</option>
+                        </select>
+                      </li>
+                  </ol>
+                  <form action="submited">
+                  <br><input type="submit" value="Submit">
+                </form>
+                </form>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Quincy Encourages 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/scrolling-nav.js') }}"></script>
+
+</body>
+
+</html>
